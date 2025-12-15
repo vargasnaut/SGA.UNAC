@@ -1,0 +1,162 @@
+═══════════════════════════════════════════════════════════════
+    SISTEMA DE GESTIÓN ACADÉMICA - UNAC
+    Primer Ciclo - Ingeniería de Sistemas
+═══════════════════════════════════════════════════════════════
+
+
+📋 INICIO RÁPIDO
+───────────────────────────────────────────────────────────────
+
+1. Abrir XAMPP → Iniciar Apache y MySQL
+2. Abrir navegador → http://localhost/sga_final/public/auth
+3. Login:
+   - Administrador:    admin / admin123
+   - Administrativo:   administrativo1 / admin123
+   - Docente:          docente_rocha / admin123
+   - Estudiante:       est_01 / admin123
+
+═══════════════════════════════════════════════════════════════
+
+📚 CURSOS DISPONIBLES (1er Ciclo)
+═══════════════════════════════════════════════════════════════
+
+ISEG101 - Cálculo I                (Docente: Rocha)
+ISEG102 - Matemática Básica        (Docente: Pérez)
+ISEG103 - Economía de la Empresa   (Docente: Zapata)
+ISEG104 - Idioma I                 (Docente: Garay)
+ISEG105 - Actividades Culturales   (Docente: Soto)
+
+═══════════════════════════════════════════════════════════════
+
+🔄 PROCESO DE MATRÍCULA
+═══════════════════════════════════════════════════════════════
+
+PASO 1: ESTUDIANTE SOLICITA
+   → Login como estudiante (est_01 / admin123)
+   → Ir a "Matrícula" → "Solicitar Matrícula"
+   → Subir comprobante de pago (imagen o PDF)
+   → Enviar solicitud
+
+PASO 2: ADMINISTRATIVO APRUEBA
+   → Login como administrativo (administrativo1 / admin123)
+   → Ir a "Solicitudes de Matrícula"
+   → Revisar comprobante
+   → Aprobar solicitud
+
+PASO 3: ESTUDIANTE SELECCIONA CURSOS
+   → Login nuevamente como estudiante
+   → Ir a "Matrícula" → "Seleccionar Cursos"
+   → Elegir cursos (máximo 5)
+   → Confirmar matrícula
+
+PASO 4: LISTO
+   → El estudiante ahora aparece en la lista del docente
+   → Puede ver calificaciones, materiales y asistencias
+
+═══════════════════════════════════════════════════════════════
+
+👨‍🏫 FUNCIONES DEL DOCENTE
+═══════════════════════════════════════════════════════════════
+
+✓ Ver estudiantes matriculados en sus cursos
+✓ Registrar calificaciones (hasta 5 componentes, fórmula configurable)
+✓ Tomar asistencia (Asistió/Tardanza/Falta/Justificado)
+✓ Subir materiales (PDF, imágenes, Word, etc.)
+✓ Ver resumen de asistencias
+✓ Guardado directo de notas y asistencias (DocentesDirect)
+✓ Estadísticas en tiempo real
+
+═══════════════════════════════════════════════════════════════
+
+🎓 FUNCIONES DEL ESTUDIANTE
+═══════════════════════════════════════════════════════════════
+
+✓ Solicitar matrícula
+✓ Seleccionar cursos
+✓ Ver calificaciones por componente
+✓ Ver historial y porcentaje de asistencias
+✓ Descargar materiales
+✓ Recibir notificaciones
+
+═══════════════════════════════════════════════════════════════
+
+👥 USUARIOS DEL SISTEMA
+═══════════════════════════════════════════════════════════════
+
+ADMINISTRADOR (1):
+   admin / admin123
+
+ADMINISTRATIVOS (2):
+   administrativo1 / admin123
+   administrativo2 / admin123
+
+DOCENTES (5):
+   docente_rocha   / admin123  → Cálculo I
+   docente_perez   / admin123  → Matemática Básica
+   docente_zapata  / admin123  → Economía
+   docente_garay   / admin123  → Idioma I
+   docente_soto    / admin123  → Actividades Culturales
+
+ESTUDIANTES (20):
+   est_01 hasta est_20 / admin123
+   Códigos: E2025001 hasta E2025020
+
+═══════════════════════════════════════════════════════════════
+
+📁 ARCHIVOS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+sga_unac.sql                 → Base de datos completa
+actualizacion_sistema.sql    → Script de actualización (nuevas tablas y columnas)
+README.md                    → Documentación completa
+ESTRUCTURA.md                → Estructura técnica
+scripts_sql/                 → Scripts de configuración
+documentacion/               → Guías y manuales
+public/uploads/materiales/   → Archivos subidos por docentes
+public/test_guardado_directo.php → Test de guardado directo
+
+═══════════════════════════════════════════════════════════════
+🐛 SOLUCIÓN DE PROBLEMAS
+═══════════════════════════════════════════════════════════════
+
+❌ Apache no inicia:
+   → Verificar puerto 80 libre
+   → Ejecutar XAMPP como administrador
+
+❌ "Too many redirects":
+   → Ir a: http://localhost/sga_cd4_unac/public/limpiar_sesion.php
+   → Limpiar sesión
+   → Cerrar navegador y volver a abrir
+
+❌ Estudiante no aparece en lista del docente:
+   → Verificar que solicitud esté APROBADA
+   → Estudiante debe SELECCIONAR cursos después de aprobación
+   → Solo aparecen matriculados en ese curso específico
+
+❌ Error al subir materiales:
+   → Verificar que carpeta public/uploads/materiales existe
+   → Tamaño máximo de archivo según configuración PHP
+
+═══════════════════════════════════════════════════════════════
+
+📊 ESTADO ACTUAL (v2.0)
+═══════════════════════════════════════════════════════════════
+
+✓ 5 Cursos del 1er ciclo configurados
+✓ 5 Docentes (uno por curso)
+✓ 20 Estudiantes creados
+✓ 2 Administrativos
+✓ Sistema de matrícula manual funcional
+✓ Calificaciones, asistencias y materiales operativos
+✓ Guardado directo de notas y asistencias (DocentesDirect)
+✓ Fórmulas de calificación personalizables
+✓ Estadísticas en tiempo real
+✓ Seguridad mejorada (CSRF, validación de roles, archivos)
+
+═══════════════════════════════════════════════════════════════
+
+
+Para más información ver: documentacion/GUIA_PRUEBAS.md
+
+Sistema desarrollado para UNAC - Ingeniería de Sistemas
+Diciembre 2025

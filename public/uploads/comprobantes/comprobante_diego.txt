@@ -1,0 +1,13 @@
+COMPROBANTE DE PAGO DE MATRÍCULA
+================================
+
+Estudiante: Diego Rodríguez Pérez
+Código: E2023002
+Monto: S/ 350.00
+Fecha: 21/11/2025
+Periodo: 2025-II
+
+Banco: Interbank
+Operación: 987654321
+
+Este es un comprobante de prueba para el sistema SGA UNAC.

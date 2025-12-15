@@ -1,0 +1,163 @@
+
+/*Estilo del login*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo con imagen */
+.login-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../img/fondo_login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Tarjeta de login */
+.login-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(6px);
+}
+
+.logo-img {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+/* Estilos de botones */
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #003f80;
+}
+
+/* Inputs */
+.form-floating > .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 100px); /* Resta header y footer */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background-color: #1f2937;
+    color: white;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #d1d5db;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #374151;
+    color: white;
+}
+
+.btn-logout {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dc2626;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-logout:hover {
+    background-color: #b91c1c;
+}
+
+
+/* Navbar moderna */
+.navbar {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.navbar-brand span {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Efecto hover en iconos */
+.navbar .btn-light:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+/* Badge de notificaciones */
+#contadorNotificaciones {
+    font-size: 0.7rem;
+    padding: 0.3em 0.5em;
+}
+
+
+/* Contenido principal */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* Header y footer */
+header, footer {
+    background-color: #111827;
+    color: rgb(11, 11, 11);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer {
+    font-size: 14px;
+}

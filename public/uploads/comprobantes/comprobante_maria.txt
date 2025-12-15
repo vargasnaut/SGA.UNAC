@@ -1,0 +1,14 @@
+COMPROBANTE DE PAGO DE MATRÍCULA
+================================
+
+Estudiante: María Jiménez Torres
+Código: E2023003
+Monto: S/ 350.00
+Fecha: 18/11/2025
+Periodo: 2025-II
+
+Banco: BBVA
+Operación: 456789123
+
+Este es un comprobante de prueba para el sistema SGA UNAC.
+SOLICITUD APROBADA POR: Laura Ramírez Castillo

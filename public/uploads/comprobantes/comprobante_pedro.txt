@@ -1,0 +1,13 @@
+﻿COMPROBANTE DE PAGO DE MATRÍCULA
+================================
+
+Estudiante: Pedro Castillo López
+Código: E2023001
+Monto: S/ 350.00
+Fecha: 20/11/2025
+Periodo: 2025-II
+
+Banco: BCP
+Operación: 123456789
+
+Este es un comprobante de prueba para el sistema SGA UNAC.
