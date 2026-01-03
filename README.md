@@ -426,18 +426,6 @@ Este proyecto es propiedad de la Universidad Nacional del Callao (UNAC).
 
 - `ESTRUCTURA.md` - Detalle completo de la arquitectura
 - `actualizacion_sistema.sql` - Script SQL con comentarios
-
----
-
-## 🎯 PRÓXIMAS MEJORAS SUGERIDAS
-
-- [ ] Exportar calificaciones a Excel
-- [ ] Gráficos de rendimiento
-- [ ] Notificaciones por email
-- [ ] App móvil
-- [ ] Reportes en PDF
-- [ ] Firma digital de actas
-
 ---
 
 **Versión**: 2.0  
