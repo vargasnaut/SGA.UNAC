@@ -253,35 +253,6 @@ Sistema estilo OpenBravo con 4 estados:
 2. **`actualizacion_sistema.sql`** - Mejoras recientes (ejecutar después de sga_unac.sql)
 
 ---
-
-## 🔧 CONFIGURACIÓN AVANZADA
-
-### Rutas del sistema (`app/Config/Routes.php`):
-
-```php
-// Autenticación
-$routes->post('auth/login', 'Auth::login');
-$routes->get('auth/logout', 'Auth::logout');
-
-// Docentes - Guardado directo ⭐
-$routes->post('docente-direct/material/(:num)', 'DocentesDirect::material/$1');
-$routes->post('docente-direct/calificaciones/(:num)', 'DocentesDirect::calificaciones/$1');
-$routes->post('docente-direct/asistencias/(:num)', 'DocentesDirect::asistencias/$1');
-
-// Docentes - Funciones completas
-$routes->get('docentes/cursos', 'Docentes::cursos');
-$routes->get('docentes/facultad/fiis/sistemas/materiales/(:num)', 'Docentes::fiisSistemasMateriales/$1');
-$routes->get('docentes/facultad/fiis/sistemas/calificaciones/(:num)', 'Docentes::fiisSistemasCalificaciones/$1');
-$routes->get('docentes/facultad/fiis/sistemas/asistencia/(:num)', 'Docentes::fiisSistemasAsistencia/$1');
-
-// Estudiantes
-$routes->get('estudiantes/materiales/(:num)', 'Estudiantes::verMateriales/$1');
-$routes->get('estudiantes/calificaciones/(:num)', 'Estudiantes::verCalificaciones/$1');
-$routes->get('estudiantes/asistencias/(:num)', 'Estudiantes::verAsistencias/$1');
-```
-
----
-
 ## 🛠️ SOLUCIÓN DE PROBLEMAS
 
 ### Problema: "No se guardan los datos"
